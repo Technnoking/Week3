@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCC-S3</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link js -->
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+       
+    <div class="container">
+        <main>
+            <div class="top-bar">
+                <nav>
+                        <div><img src="./Assets/icons/menu1.svg" alt=""></div> 
+                        <div><img src="./Assets/icons/menu2.svg" alt=""></div> 
+                        <div class="active"><img src="./Assets/icons/menu3.svg" alt=""></div> 
+                        <div><img src="./Assets/icons/menu4.svg" alt=""></div> 
+                   <img class="burger" src="./Assets/icons/burger.svg" alt="">
+                   <div class="nav-mobile">
+                     <img src="./Assets/icons/menu1.svg" alt="">
+                     <img src="./Assets/icons/menu2.svg" alt="">
+                     <img src="./Assets/icons/menu3.svg" alt="">
+                     <img src="./Assets/icons/menu4.svg" alt="">
+                   </div>
+                </nav>
+                <img class="top-bar-img" src="./Assets/image/profile.png" alt="">
+            </div>
+            <div class="sub-container">
+                <div class="sub-menu">
+                    <a href="#" class="active">Book a hotel</a>
+                    <a href="#">Buy entrance ticket</a>
+                </div>
+                <div class="search">
+                    <div class="search-content">
+                        <img src="./Assets/icons/search.svg" alt="">
+                        <input type="search" value="City of Moab Utah">
+                    </div>
+                    <img src="./Assets/icons/point.svg" alt="">
+                </div>
+                <div class="check">
+                    <div class="button active activate">
+                        <div class="btn-left"> <img src="./Assets/icons/arrow-power.svg" alt=""> Check in</div>
+                        <div class="btn-right"><img src="./Assets/icons/arrow-fill.svg" alt=""></div>
+                    </div>
+                    <div class="button">
+                        <div class="btn-left"> <img class="rotate" src="./Assets/icons/arrow-power.svg" alt=""> Check out</div>
+                        <div class="btn-right"><img src="./Assets/icons/arrow-fill.svg" alt=""></div>
+                    </div>
+                    <div class="button">
+                        <div class="btn-left"> <img  src="./Assets/icons/person.svg" alt=""> Guests</div>
+                        <div class="btn-right">
+                            <img src="./Assets/icons/point.svg" alt="">
+                            <img src="./Assets/icons/point.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="btn-left"> <img class="align-self" src="./Assets/icons/home.svg" alt=""> Rooms <output></output></div>
+                        <div class="btn-right"><img src="" alt="">
+                            <img src="./Assets/icons/point.svg" alt="">
+                            <img src="./Assets/icons/point.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="adjuste"><img src="./Assets/icons/adjuste.svg" alt=""></div>
+                    <div class="check-search"><img src="./Assets/icons/search-white.svg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="results">
+                <p class="result-in">Results in <span>Moab, UT</span> <span class="results-number">34</span></p>
+                <div class="results-content">
+                    <p>Recommended hotels in area</p>
+
+                <!-- TODO: Carousel -->
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item item1">
+                                <p class="item-price">
+                                  <span>$160</span><span>/night</span>
+                                </p>
+                                <p class="item-title">Spring Hill Suites</p>
+                                <div class="item-quality">
+                                    <img src="./Assets/icons/star.svg" alt="">
+                                    4.5/5
+                                    <span>
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4_422)">
+                                            <path class="local" d="M7 0.5C4.08541 0.5 1.72266 2.86275 1.72266 5.77735C1.72266 6.75206 1.91344 7.75878 2.46093 8.48438L7 14.5L11.5391 8.48438C12.0364 7.82533 12.2773 6.66022 12.2773 5.77735C12.2773 2.86275 9.91459 0.5 7 0.5ZM7 3.55651C8.22636 3.55651 9.22082 4.55099 9.22082 5.77733C9.22082 7.0037 8.22636 7.99817 7 7.99817C5.77365 7.99817 4.77918 7.0037 4.77918 5.77735C4.77918 4.55099 5.77365 3.55651 7 3.55651Z"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_4_422">
+                                            <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Moab, UT
+                                    </span>
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="carousel-item item2">
+                                <p class="item-price">
+                                    <span>$160</span><span>/night</span>
+                                  </p>
+                                  <p class="item-title">Arne's Royal Hawailan</p>
+                                  <div class="item-quality">
+                                      <img src="./Assets/icons/star.svg" alt="">
+                                      4.5/5
+                                      <span>
+                                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_4_422)">
+                                              <path class="local" d="M7 0.5C4.08541 0.5 1.72266 2.86275 1.72266 5.77735C1.72266 6.75206 1.91344 7.75878 2.46093 8.48438L7 14.5L11.5391 8.48438C12.0364 7.82533 12.2773 6.66022 12.2773 5.77735C12.2773 2.86275 9.91459 0.5 7 0.5ZM7 3.55651C8.22636 3.55651 9.22082 4.55099 9.22082 5.77733C9.22082 7.0037 8.22636 7.99817 7 7.99817C5.77365 7.99817 4.77918 7.0037 4.77918 5.77735C4.77918 4.55099 5.77365 3.55651 7 3.55651Z"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_4_422">
+                                              <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                              </clipPath>
+                                              </defs>
+                                          </svg>
+                                          Moab, UT
+                                      </span>
+                                      
+                                  </div>
+                            </div>
+                            <div class="carousel-item item3">
+                                <p class="item-price">
+                                    <span>$160</span><span>/night</span>
+                                  </p>
+                                  <p class="item-title">Spring Hill Suites</p>
+                                  <div class="item-quality">
+                                      <img src="./Assets/icons/star.svg" alt="">
+                                      4.5/5
+                                      <span>
+                                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_4_422)">
+                                              <path class="local" d="M7 0.5C4.08541 0.5 1.72266 2.86275 1.72266 5.77735C1.72266 6.75206 1.91344 7.75878 2.46093 8.48438L7 14.5L11.5391 8.48438C12.0364 7.82533 12.2773 6.66022 12.2773 5.77735C12.2773 2.86275 9.91459 0.5 7 0.5ZM7 3.55651C8.22636 3.55651 9.22082 4.55099 9.22082 5.77733C9.22082 7.0037 8.22636 7.99817 7 7.99817C5.77365 7.99817 4.77918 7.0037 4.77918 5.77735C4.77918 4.55099 5.77365 3.55651 7 3.55651Z"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_4_422">
+                                              <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                              </clipPath>
+                                              </defs>
+                                          </svg>
+                                          Moab, UT
+                                      </span>
+                                      
+                                  </div>
+                            </div>
+                            <div class="carousel-item item4">
+                                <p class="item-price">
+                                    <span>$160</span><span>/night</span>
+                                  </p>
+                                  <p class="item-title">Spring Hill Suites</p>
+                                  <div class="item-quality">
+                                      <img src="./Assets/icons/star.svg" alt="">
+                                      4.5/5
+                                      <span>
+                                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_4_422)">
+                                              <path class="local" d="M7 0.5C4.08541 0.5 1.72266 2.86275 1.72266 5.77735C1.72266 6.75206 1.91344 7.75878 2.46093 8.48438L7 14.5L11.5391 8.48438C12.0364 7.82533 12.2773 6.66022 12.2773 5.77735C12.2773 2.86275 9.91459 0.5 7 0.5ZM7 3.55651C8.22636 3.55651 9.22082 4.55099 9.22082 5.77733C9.22082 7.0037 8.22636 7.99817 7 7.99817C5.77365 7.99817 4.77918 7.0037 4.77918 5.77735C4.77918 4.55099 5.77365 3.55651 7 3.55651Z"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_4_422">
+                                              <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                              </clipPath>
+                                              </defs>
+                                          </svg>
+                                          Moab, UT
+                                      </span>
+                                      
+                                  </div>
+                            </div>
+                            <div class="carousel-item item5">
+                                <p class="item-price">
+                                    <span>$160</span><span>/night</span>
+                                  </p>
+                                  <p class="item-title">Spring Hill Suites</p>
+                                  <div class="item-quality">
+                                      <img src="./Assets/icons/star.svg" alt="">
+                                      4.5/5
+                                      <span>
+                                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_4_422)">
+                                              <path class="local" d="M7 0.5C4.08541 0.5 1.72266 2.86275 1.72266 5.77735C1.72266 6.75206 1.91344 7.75878 2.46093 8.48438L7 14.5L11.5391 8.48438C12.0364 7.82533 12.2773 6.66022 12.2773 5.77735C12.2773 2.86275 9.91459 0.5 7 0.5ZM7 3.55651C8.22636 3.55651 9.22082 4.55099 9.22082 5.77733C9.22082 7.0037 8.22636 7.99817 7 7.99817C5.77365 7.99817 4.77918 7.0037 4.77918 5.77735C4.77918 4.55099 5.77365 3.55651 7 3.55651Z"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_4_422">
+                                              <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                              </clipPath>
+                                              </defs>
+                                          </svg>
+                                          Moab, UT
+                                      </span>
+                                      
+                                  </div>
+                            </div>
+                            <div class="carousel-item item6">
+                                <p class="item-price">
+                                    <span>$160</span><span>/night</span>
+                                  </p>
+                                  <p class="item-title">Spring Hill Suites</p>
+                                  <div class="item-quality">
+                                      <img src="./Assets/icons/star.svg" alt="">
+                                      4.5/5
+                                      <span>
+                                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_4_422)">
+                                              <path class="local" d="M7 0.5C4.08541 0.5 1.72266 2.86275 1.72266 5.77735C1.72266 6.75206 1.91344 7.75878 2.46093 8.48438L7 14.5L11.5391 8.48438C12.0364 7.82533 12.2773 6.66022 12.2773 5.77735C12.2773 2.86275 9.91459 0.5 7 0.5ZM7 3.55651C8.22636 3.55651 9.22082 4.55099 9.22082 5.77733C9.22082 7.0037 8.22636 7.99817 7 7.99817C5.77365 7.99817 4.77918 7.0037 4.77918 5.77735C4.77918 4.55099 5.77365 3.55651 7 3.55651Z"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_4_422">
+                                              <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                              </clipPath>
+                                              </defs>
+                                          </svg>
+                                          Moab, UT
+                                      </span>
+                                      
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-options">
+                        <div class="previous">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_63)">
+                                <path class="prev fleche" d="M16.172 11L10.808 5.636L12.222 4.222L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_7_63">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="indicator active"></div>
+                        <div class="indicator"></div>
+                        <div class="next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_63)">
+                                <path class="nex fleche active" d="M16.172 11L10.808 5.636L12.222 4.222L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_7_63">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                            
+                    </div>
+
+                    <div class="choose-match">
+                        <p>Choose match</p>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card-left">
+                                    <img src="./Assets/image/card4.png" alt="">
+                                    <div class="card-description">
+                                        <p class="card-title">Archway Inn</p>
+                                        <div class="card-quality">
+                                            <img src="./Assets/icons/star.svg" alt="">
+                                            4.5/5
+                                            <img src="./Assets/icons/localisation.svg" alt="">
+                                            Moab, UT
+                                        </div>
+                                        <p class="card-price"><span>$120</span><span>/night</span> </p>
+                                    </div>
+                                </div>
+                                <div class="card-right card-right1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="arrow-right" fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H19.9395L15.219 6.531C15.0782 6.39017 14.9991 6.19916 14.9991 6C14.9991 5.80084 15.0782 5.60983 15.219 5.469C15.3598 5.32817 15.5508 5.24905 15.75 5.24905C15.9492 5.24905 16.1402 5.32817 16.281 5.469L22.281 11.469C22.3508 11.5387 22.4063 11.6214 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1963 22.4441 12.2875C22.4063 12.3786 22.3508 12.4613 22.281 12.531L16.281 18.531C16.1402 18.6718 15.9492 18.7509 15.75 18.7509C15.5508 18.7509 15.3598 18.6718 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8008 15.0782 17.6098 15.219 17.469L19.9395 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z"/>
+                                     </svg>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-left">
+                                    <img src="./Assets/image/card3.png" alt="">
+                                    <div class="card-description">
+                                        <p class="card-title">The Connor Hotel</p>
+                                        <div class="card-quality">
+                                            <img src="./Assets/icons/star.svg" alt="">
+                                            4.5/5
+                                            <img src="./Assets/icons/localisation.svg" alt="">
+                                            Moab, UT
+                                        </div>
+                                        <p class="card-price"><span>$125</span><span>/night</span> </p>
+                                    </div>
+                                </div>
+                                <div class="card-right card-right2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="arrow-right" fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H19.9395L15.219 6.531C15.0782 6.39017 14.9991 6.19916 14.9991 6C14.9991 5.80084 15.0782 5.60983 15.219 5.469C15.3598 5.32817 15.5508 5.24905 15.75 5.24905C15.9492 5.24905 16.1402 5.32817 16.281 5.469L22.281 11.469C22.3508 11.5387 22.4063 11.6214 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1963 22.4441 12.2875C22.4063 12.3786 22.3508 12.4613 22.281 12.531L16.281 18.531C16.1402 18.6718 15.9492 18.7509 15.75 18.7509C15.5508 18.7509 15.3598 18.6718 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8008 15.0782 17.6098 15.219 17.469L19.9395 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z"/>
+                                     </svg>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-left">
+                                    <img src="./Assets/image/card2.png" alt="">
+                                    <div class="card-description">
+                                        <p class="card-title">Phoenician</p>
+                                        <div class="card-quality">
+                                            <img src="./Assets/icons/star.svg" alt="">
+                                            4.5/5
+                                            <img src="./Assets/icons/localisation.svg" alt="">
+                                            Moab, UT
+                                        </div>
+                                        <p class="card-price"><span>$130</span><span>/night</span> </p>
+                                    </div>
+                                </div>
+                                <div class="card-right card-right3">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="arrow-right" fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H19.9395L15.219 6.531C15.0782 6.39017 14.9991 6.19916 14.9991 6C14.9991 5.80084 15.0782 5.60983 15.219 5.469C15.3598 5.32817 15.5508 5.24905 15.75 5.24905C15.9492 5.24905 16.1402 5.32817 16.281 5.469L22.281 11.469C22.3508 11.5387 22.4063 11.6214 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1963 22.4441 12.2875C22.4063 12.3786 22.3508 12.4613 22.281 12.531L16.281 18.531C16.1402 18.6718 15.9492 18.7509 15.75 18.7509C15.5508 18.7509 15.3598 18.6718 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8008 15.0782 17.6098 15.219 17.469L19.9395 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z"/>
+                                     </svg>
+                                        
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-left">
+                                    <img src="./Assets/image/card1.png" alt="">
+                                    <div class="card-description">
+                                        <p class="card-title">Grand Private</p>
+                                        <div class="card-quality">
+                                            <img src="./Assets/icons/star.svg" alt="">
+                                            4.5/5
+                                            <img src="./Assets/icons/localisation.svg" alt="">
+                                            Moab, UT
+                                        </div>
+                                        <p class="card-price"><span>$160</span><span>/night</span> </p>
+                                    </div>
+                                </div>
+                                <div class="card-right card-right4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="arrow-right" fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12C1.5 11.8011 1.57902 11.6103 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25H19.9395L15.219 6.531C15.0782 6.39017 14.9991 6.19916 14.9991 6C14.9991 5.80084 15.0782 5.60983 15.219 5.469C15.3598 5.32817 15.5508 5.24905 15.75 5.24905C15.9492 5.24905 16.1402 5.32817 16.281 5.469L22.281 11.469C22.3508 11.5387 22.4063 11.6214 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1963 22.4441 12.2875C22.4063 12.3786 22.3508 12.4613 22.281 12.531L16.281 18.531C16.1402 18.6718 15.9492 18.7509 15.75 18.7509C15.5508 18.7509 15.3598 18.6718 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8008 15.0782 17.6098 15.219 17.469L19.9395 12.75H2.25C2.05109 12.75 1.86032 12.671 1.71967 12.5303C1.57902 12.3897 1.5 12.1989 1.5 12Z"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <section class="cart">
+            <div class="point point1"><div></div></div>
+            <div class="point point2"><div></div></div>
+            <div class="point point3"><div></div></div>
+            <div class="point point4"><div></div></div>
+
+            <div class="price price1">$100</div>
+            <div class="price price2">$140</div>
+            <div class="price price3">$160</div>
+            <div class="price price4">$120</div>
+
+            <div class="hot hot1">
+                <div class="hot-img"></div>
+                <div class="hot-description">
+                    <h3>Archway Inn</h3>
+                    <p><img src="./Assets/icons/star.svg" alt="">4.5/5 <span></span> 0,6 km</p>
+                    <button>Details </button>
+                </div>
+            </div>
+            <div class="hot hot2">
+                <div class="hot-img hot-img2"></div>
+                <div class="hot-description">
+                    <h3>The Connor</h3>
+                    <p><img src="./Assets/icons/star.svg" alt="">4.5/5 <span></span> 0,6 km</p>
+                    <button>Details </button>
+                </div>
+            </div>
+            <div class="hot hot3">
+                <div class="hot-img hot-img3"></div>
+                <div class="hot-description">
+                    <h3>Phoenician</h3>
+                    <p><img src="./Assets/icons/star.svg" alt="">4.5/5 <span></span> 0,6 km</p>
+                    <button>Details </button>
+                </div>
+            </div>
+            <div class="hot hot4">
+                <div class="hot-img hot-img4"></div>
+                <div class="hot-description">
+                    <h3>Grand Private</h3>
+                    <p><img src="./Assets/icons/star.svg" alt="">4.5/5 <span></span> 0,6 km</p>
+                    <button>Details </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="loader">
+        <span class="letter">H</span>
+        <span class="letter">O</span>
+        <span class="letter">U</span>
+        <span class="letter">S</span>
+        <span class="letter">E</span>
+        <span class="letter">-</span>
+        <span class="letter">F</span>
+        <span class="letter">O</span>
+        <span class="letter">R</span>
+        <span class="letter">-</span>
+        <span class="letter">R</span>
+        <span class="letter">E</span>
+        <span class="letter">N</span>
+        <span class="letter">T</span>
+    </div>
+
+</body>
+</html>

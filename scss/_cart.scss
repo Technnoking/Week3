@@ -1,0 +1,205 @@
+.cart {
+    background-image: url(../Assets/image/map.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+        
+    .hot1 {
+        bottom: 52%;
+        right: 15px;
+    }
+
+    .hot2 {
+        bottom: 42%;
+        left: 62px;
+    } 
+
+    .hot3 {
+        bottom: 35%;
+        right: 40px;
+    }
+
+    .hot4 {
+        bottom: 27%;
+        left: 10px;
+    }
+    
+    
+    .point {
+        width: 20px;
+        aspect-ratio: 1;
+        background: darken($white, 30%);
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        animation: scale 1s infinite alternate;
+        transition: transform .3s ease-in;
+
+        div {
+            width: 8px;
+            aspect-ratio: 1;
+            background: $white;
+            border-radius: 50%;
+            transition: background .3s;
+        }
+        
+        &:hover div {
+            background: $orange;
+        }
+    }
+
+    
+    .point1 {
+        top: 50%;
+        right: 100px;
+    }
+
+    .point2 {
+        top: 60%;
+        left: 150px;
+    }
+
+    .point3 {
+        top: 67%;
+        right: 130px;
+    }
+
+    .point4 {
+        top: 76%;
+        left: 100px;
+    }
+
+    @keyframes scale {
+        from {
+           transform: scale(.9);
+        }
+    
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+    
+.price {
+    background: $white;
+    width: 40px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.price1 {
+    top: 45%;
+    right: 90px;
+}
+
+.price2 {
+    top: 55%;
+    left: 140px;
+}
+
+.price3 {
+    top: 62%;
+    right: 120px;
+}
+
+.price4 {
+    top: 70%;
+    left: 90px;
+   
+}
+
+@for $i from 1 through 4 {
+    .price#{$i} {
+        transition: all .3s ease-in-out;
+    }
+    .price#{$i}.active {
+        background: $orange;
+        color: $white;
+    }
+    .price#{$i}.none {
+        transform: scale(0);
+    }
+}
+
+.hot {
+    width: 200px;
+    height: 280px;
+    background: $white;
+    border: 7px solid $white;
+    border-radius: 6px;
+    position: absolute;
+    transform-origin: bottom center;
+    transform: scale(0);
+    transition: transform .4s ease-in-out;
+    .hot-img {
+        height: 45%;
+        background: url(../Assets/image/card4.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hot-img2 {
+        background-image: url(../Assets/image/card3.png);
+    }
+    .hot-img3 {
+        background-image: url(../Assets/image/card2.png);
+    }
+    .hot-img4 {
+        background-image: url(../Assets/image/card1.png);
+    }
+
+    .hot-description {
+        margin-top: 1em;
+        h3 {
+            font-size: 23px;
+        }
+
+        p {
+            @extend %flex;
+            margin-block: 10px;
+            img {
+                margin-right: 5px;
+                margin-bottom: 4px;
+            }
+            span {
+                display: block;
+                width: 5px;
+                aspect-ratio: 1;
+                background: $black;
+                margin-bottom: 3%;
+                margin-inline: 5px;
+                border-radius: 50%;            }
+        }
+
+        button {
+            width: 100%;
+            background: $black;
+            color: $white;
+            border-radius: 6px;
+            padding: .8em 2em;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background .3s ease-in-out;
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .hot#{$i}.active {
+        transform: scale(1);
+    }
+}
+
+
+}

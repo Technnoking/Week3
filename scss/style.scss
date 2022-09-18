@@ -1,0 +1,63 @@
+
+@import './variables';
+
+// font
+
+@font-face {
+    font-family: 'regular';
+    src: url(../Font/MADERegular.otf);
+}
+@font-face {
+    font-family: 'medium';
+    src: url(../Font/MADEMedium.otf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(../Font/MADEOBold.otf);
+}
+// tab
+@import '../scss/tab';
+//fake-selector
+@import './placeholders';
+
+//mixins
+@import './mixins';
+//loader
+@import './loader';
+
+// basic styles 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'regular';
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 2em;
+}
+
+.container {
+    @extend %flex;
+    align-items: start;
+    width: 100%;
+    main {
+        width: 70%;
+    }
+    .cart {
+        width: 30%;
+        height: 919px;
+    }
+}
+
+@import './_main.scss';
+@import './_cart';
+
+
+
+

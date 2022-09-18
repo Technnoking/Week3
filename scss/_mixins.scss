@@ -1,0 +1,16 @@
+//Absolut Position
+
+@mixin absolut-el($top, $right, $bottom, $left, $x, $y ) {
+    top:$top;
+    right: $right;
+    bottom:$bottom;
+    left:$left;
+    transform: translate($x, $y);
+}
+// Before and after
+
+@mixin pseudo-el($diplay:block, $pos:absolute, $content:'') {
+    content: $content;
+    display: $diplay;
+    position: $pos;
+}
